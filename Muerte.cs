@@ -9,7 +9,7 @@ namespace EjercicioDos
     internal interface Muerte
     { 
         //Se crea crean compaortamientos que reciban y devuelvan parametros
-     string Morir(int nacimiento, int faleccimiento, string causa);
+     string Morir(int nacimiento, int fallecimiento, string causa);
      string Reencarna( string revivio);
     }
 }

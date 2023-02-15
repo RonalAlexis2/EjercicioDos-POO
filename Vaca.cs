@@ -7,29 +7,33 @@ using System.Threading.Tasks;
 namespace EjercicioDos
 {
     internal class Vaca : Mamifero, Muerte
-    {    //se sobrescribe el metodo de mamimero amamantar
+    {
+        //creamos variable para guardar informacion del constructor        
+        ModeloAnimal guardarinfoVaca;
+
+        //se sobrescribe el metodo de mamimero amamantar
         public override void amamanta()
         {
             Console.WriteLine("la vaca da leche");
         }
         //logica para calcular murte y pares
-        public string Morir(int nacimiento, int faleccimiento, string causa)
+        public string Morir(int nacimiento, int fallecimiento, string causa)
         {
-            int calculo = nacimiento - faleccimiento;
-            calculo = calculo * 2;
-            string N;
-             if (calculo%2==0)
+            int calculo = (nacimiento - fallecimiento)*2;
+            string basenumero;
+            
+            if (calculo%2 == 0)
             {
-                N = "par";
+              basenumero  = "par";
             }
             else
             {
-                N = "impar";
+              basenumero = "impar";
             }
 
-            Console.WriteLine("La fecha de su muerte " +faleccimiento, "el numero es " + N, "vivio"+ calculo, "años y murio por "+ causa);
-            string m = Console.ReadLine();
-            return m;
+            Console.WriteLine("La fecha de su muerte " +fallecimiento, "el numero es " + basenumero, "vivio"+ calculo, "años y murio por "+ causa);
+            
+            return Console.ReadLine();
         }
         //reencarna devuelve el mismo recibido pero concatenado
         public string Reencarna(string revivio)
@@ -45,6 +49,8 @@ namespace EjercicioDos
             ovaca.setcolor("blanca y negra");
             ovaca.setdomestico(false);
             ovaca.setgrupo("vertebrado");
+
+            guardarinfoVaca = ovaca;
         }
     }
 }

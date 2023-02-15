@@ -17,6 +17,7 @@ namespace EjercicioDos
         //creamos un nuevo metodo que reciba parametros
         public string cantar( string trinar)
         {
+            trinar = "El ave esta trinando" + trinar;
             return trinar;
         }
     }

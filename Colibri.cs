@@ -8,6 +8,9 @@ namespace EjercicioDos
 {
     internal class Colibri : Ave, Muerte
     {
+        //creamos variable para guardar informacion del constructor        
+           ModeloAnimal guardarinfo;
+
         //se sobre escribe metodo comer
         public override void comer()
         {
@@ -20,11 +23,11 @@ namespace EjercicioDos
         }
 
         //se reciben los parametros de muerte y se calcula cuanto vivio
-        public string Morir(int nacimiento, int faleccimiento, string causa)
+        public string Morir(int nacimiento, int fallecimiento, string causa)
         {
             int calculo;
-            calculo = nacimiento - faleccimiento;
-            Console.WriteLine("La fecha de su muerte es: " + faleccimiento, "vivio "+ calculo, "años y la causa de la muerte es"+ causa);
+            calculo = nacimiento - fallecimiento;
+            Console.WriteLine("La fecha de su muerte es: " + fallecimiento, "vivio "+ calculo, "años y la causa de la muerte es"+ causa);
             string m=Console.ReadLine();
             return m;
         }  
@@ -32,13 +35,11 @@ namespace EjercicioDos
         public string Reencarna(string revivio)
         {
             return revivio;
-        }
-        //creamos variable para guardar informacion del constructor        
-        ModeloAnimal guardarinfo;
+        }      
         //constructor que no recibe parametros, pero llena info de ModeloAnimal
         public Colibri()
         { 
-            ModeloAnimal ocolibri=new ModeloAnimal();
+            ModeloAnimal ocolibri = new ModeloAnimal();
 
             ocolibri.setnombre("colibrí exotico");
             ocolibri.sethabitat("Aire");

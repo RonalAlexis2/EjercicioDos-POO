@@ -17,7 +17,7 @@ namespace EjercicioDos
             Console.WriteLine("la vaca da leche");
         }
         //logica para calcular murte y pares
-        public string Morir(int nacimiento, int fallecimiento, string causa)
+        public string morir(int nacimiento, int fallecimiento, string causa)
         {
             int calculo = (nacimiento - fallecimiento)*2;
             string basenumero;
@@ -31,12 +31,12 @@ namespace EjercicioDos
               basenumero = "impar";
             }
 
-            Console.WriteLine("La fecha de su muerte " +fallecimiento, "el numero es " + basenumero, "vivio"+ calculo, "años y murio por "+ causa);
+            Console.WriteLine("La fecha de su muerte " +fallecimiento.ToString(), "el numero es " + basenumero.ToString(), "vivio"+ calculo.ToString(), "años y murio por "+ causa);
             
             return Console.ReadLine();
         }
         //reencarna devuelve el mismo recibido pero concatenado
-        public string Reencarna(string revivio)
+        public string reencarna(string revivio)
         {
             return revivio + "Tu puedes hacerlo!";
         }

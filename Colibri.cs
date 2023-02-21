@@ -25,11 +25,8 @@ namespace EjercicioDos
         //se reciben los parametros de muerte y se calcula cuanto vivio
         public string morir(int nacimiento, int fallecimiento, string causa)
         {
-            int calculo;
-            calculo = nacimiento - fallecimiento;
-            Console.WriteLine("La fecha de su muerte es: " + fallecimiento.ToString(), "vivio "+ calculo.ToString(), "años y la causa de la muerte es"+ causa);
-            
-            return Console.ReadLine();
+            int calculo = fallecimiento -nacimiento;           
+            return "La fecha de su muerte es: " + fallecimiento.ToString(), "vivió " + calculo.ToString(), "años y la causa de la muerte es" + causa;
         }  
         //se retorna el mismo string que recibimos
         public string reencarna(string revivio)

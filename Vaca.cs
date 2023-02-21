@@ -19,7 +19,7 @@ namespace EjercicioDos
         //logica para calcular murte y pares
         public string morir(int nacimiento, int fallecimiento, string causa)
         {
-            int calculo = (nacimiento - fallecimiento)*2;
+            int calculo = (fallecimiento - nacimiento )*2;
             string basenumero;
             
             if (calculo%2 == 0)
@@ -29,11 +29,9 @@ namespace EjercicioDos
             else
             {
               basenumero = "impar";
-            }
-
-            Console.WriteLine("La fecha de su muerte " +fallecimiento.ToString(), "el numero es " + basenumero.ToString(), "vivio"+ calculo.ToString(), "años y murio por "+ causa);
+            }     
             
-            return Console.ReadLine();
+            return "La fecha de su muerte " + fallecimiento.ToString(), "el numero es " + basenumero.ToString(), "vivio" + calculo.ToString(), "años y murio por " + causa;
         }
         //reencarna devuelve el mismo recibido pero concatenado
         public string reencarna(string revivio)

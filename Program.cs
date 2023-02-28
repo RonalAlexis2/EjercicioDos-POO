@@ -11,14 +11,14 @@ namespace EjercicioDos
         static void Main(string[] args)
         {
             Colibri ocolibri = new Colibri();
-            ocolibri.Morir(2022,2023,"hambre");
-            ocolibri.Reencarna("wuju");
+            Console.WriteLine(ocolibri.Morir(2022,2023,"hambre"));
+            Console.WriteLine(ocolibri.Reencarna("wuju"));
             ocolibri.atacar();
             ocolibri.volar();
 
             Vaca ovaca = new Vaca();
-            ovaca.Morir(2015,2023,"devorada");
-            ovaca.Reencarna("vaca vive");
+            Console.WriteLine(ovaca.Morir(2015,2023,"devorada"));
+            Console.WriteLine(ovaca.Reencarna("vaca vive"));
             ovaca.amamanta();
             ovaca.comer();
 
